@@ -1,0 +1,16 @@
+CREATE TABLE [dbo].[User](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Email] [nvarchar](100) NOT NULL,
+	[Password] [nvarchar](100) NULL,
+	[ConfirmPassword] [nvarchar](100) NULL,
+	[Firstname] [nvarchar](100) NOT NULL,
+	[Lastname] [nvarchar](100) NOT NULL,
+	[Active] [int] NOT NULL,
+	[Code] [nvarchar](100) NOT NULL,
+ CONSTRAINT [PK__User__3214EC077B0B6A86] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY] 
+GO
+SET IDENTITY_INSERT [dbo].[User] ON 
